@@ -1,0 +1,26 @@
+.Header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+  margin-right: 6rem;
+  grid-template-columns: auto 2rem 13rem;
+  gap: 2rem;
+}
+
+.User {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2.5rem auto 1rem;
+  gap: 1rem;
+}
+
+.User:hover {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: auto;
+}

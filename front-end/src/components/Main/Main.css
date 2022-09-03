@@ -1,0 +1,5 @@
+.Main {
+  grid-area: main;
+  display: flex;
+  margin: 2rem 8rem 1rem 3rem;
+}

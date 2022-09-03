@@ -1,0 +1,16 @@
+.Table {
+  width: 100%;
+}
+
+.Rate {
+  display: grid;
+  grid-template-columns: 0.3rem 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Expand {
+  display: grid;
+  grid-template-columns: 1rem 5rem;
+  align-items: center;
+}
