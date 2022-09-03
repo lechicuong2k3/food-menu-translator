@@ -1,0 +1,11 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 0.1rem;
+  transition: all 300ms ease;
+}
+
+.Logo{
+  height: 2rem;
+}
