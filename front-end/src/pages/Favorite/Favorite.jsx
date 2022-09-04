@@ -12,20 +12,10 @@ const Favorite = (props) => {
 
   return (
     <div className='AppGlass'>
-      <Sidebar 
-          // section={section} 
-          // onChangeSection={setSection()} 
-          // data={SidebarData}
-        />
-        <Header 
-          // section={section}
-          // sectionData={SidebarData}
-        />
-        <Main 
-          // section={section}
-          restaurantData={favoriteData}
-        />
-        <Footer/>
+      <Sidebar heading={"Your Favorite"}/>
+      <Header heading={"Your Favorite"}/>
+      <Main restaurantData={favoriteData}/>
+      <Footer/>
     </div>
   )
 }

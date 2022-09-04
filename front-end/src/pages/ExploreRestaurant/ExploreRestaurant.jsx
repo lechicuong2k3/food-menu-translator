@@ -9,20 +9,10 @@ import Footer from '../../components/Footer/Footer';
 const ExploreRestaurant = (props) => {
   return (
     <div className='AppGlass'>
-      <Sidebar 
-          // section={section} 
-          // onChangeSection={setSection()} 
-          // data={SidebarData}
-        />
-        <Header 
-          // section={section}
-          // sectionData={SidebarData}
-        />
-        <Main 
-          // section={section}
-          restaurantData={props.data}
-        />
-        <Footer/>
+      <Sidebar heading={"Explore Restaurant"}/>
+      <Header heading={"Explore Restaurant"}/>
+      <Main restaurantData={props.data}/>
+      <Footer/>
     </div>
   )
 }

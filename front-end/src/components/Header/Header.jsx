@@ -8,16 +8,7 @@ const Header = (props) => {
   return (
     <div className='Header'>
       {/* section */}
-      {/* {props.sectionData.map((item) => {
-        if (item.key===props.section) {
-          return (
-            <h2>{item.heading}</h2>
-          )
-        }
-        return <h2>Unexpected Error</h2>
-      })} */}
-
-      <h2>Restaurant</h2>
+      <h1>{props.heading}</h1>
 
       {/* notification */}
       <BsFillBellFill size={20}/>

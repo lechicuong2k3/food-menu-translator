@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import './Sidebar.css';
 import Logo from "../../assets/5fm.png";
@@ -6,9 +6,7 @@ import Logo from "../../assets/5fm.png";
 import { SidebarData } from '../Data/SidebarData';
 import { InfoData } from '../Data/InfoData';
 
-const Sidebar = () => {
-
-  const [selected, setSelected] = useState(0);
+const Sidebar = (props) => {
 
   return (
     <div className='Sidebar'>
@@ -22,9 +20,8 @@ const Sidebar = () => {
         {SidebarData.map((item, index) => {
           return(
             <Link to={`/${item.path}`}
-              className={selected===index?"MenuItem Active":"MenuItem"}
+              className={item.heading===props.heading?"MenuItem Active":"MenuItem"}
               key={index}
-              onClick={()=>setSelected(index)}
             >
               <item.icon/>
               <span>

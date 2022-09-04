@@ -9,12 +9,7 @@ import FindRestaurant from './pages/FindRestaurant/FindRestaurant';
 
 import { Restaurant } from './components/Data/Restaurant';
 
-// import { SidebarData } from './components/Data/SidebarData';
-
 const App = () => {
-
-  // const [section, setSection] = useState("1");
-
   return (
     <div className="App">
       {/* <div className="AppGlass"> */}
