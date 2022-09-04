@@ -1,12 +1,19 @@
-.Table {
-  width: 100%;
+/* .ant-table-thead > tr >th{
+  background: #DEEFFB !important;
 }
+
+.ant-table-tbody:hover{
+  background: #DEEFFB !important;
+}
+
+.ant-table-tbody{
+  background: #DEEFFB !important;
+} */
 
 .Rate {
   display: grid;
   grid-template-columns: 0.3rem 0.3rem;
   align-items: center;
-  justify-content: center;
 }
 
 .Expand {

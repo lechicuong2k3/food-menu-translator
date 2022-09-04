@@ -2,10 +2,10 @@ import React from 'react';
 import './Main.css';
 import Table from '../Table/Table';
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div className='Main'>
-      <Table/>
+      <Table data={props.restaurantData}/>
     </div>
   )
 }

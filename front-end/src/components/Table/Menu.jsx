@@ -1,6 +1,5 @@
 import { Table } from 'antd';
 import React from 'react';
-import './Menu.css';
 
 const columns = [
   {
@@ -17,6 +16,10 @@ const columns = [
   },
 ];
 
-const Menu = (props) => <Table columns={columns} dataSource={props.menu} />;
+const Menu = (props) => <Table 
+    columns={columns} 
+    dataSource={props.menu} 
+    // scroll={{y:100}}
+  />;
 
 export default Menu;

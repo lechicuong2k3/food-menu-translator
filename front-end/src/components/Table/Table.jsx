@@ -2,7 +2,6 @@ import { Space, Table } from 'antd';
 import React from 'react';
 import './Table.css';
 
-import { Restaurant } from '../Data/Restaurant';
 import Menu from './Menu';
 import { BsHeart, BsHeartFill, BsStarFill } from "react-icons/bs";
 import { PlusCircleTwoTone, MinusCircleTwoTone } from "@ant-design/icons";
@@ -33,6 +32,7 @@ const columns = [
     title: 'Favorite',
     key: 'favorite',
     dataIndex: 'favorite',
+    width: 100,
     render: (favorite) => (
       favorite===1? <BsHeartFill color='red'/>: <BsHeart/>
     ),
@@ -41,13 +41,13 @@ const columns = [
 
 const TableStyle = {
   width: "100%",
-  borderRadius: "30%",
-  backgroundColor: "#DFF0FB"
+  marginRight: "2rem",
+  fontSize: "14px",
 };
 
-const DataTable = () => <Table 
+const DataTable = (props) => <Table 
     columns={columns} 
-    dataSource={Restaurant} 
+    dataSource={props.data} 
     expandable={{
       expandedRowRender: (record) => (
         <Menu menu={record.menu}/>
@@ -65,8 +65,8 @@ const DataTable = () => <Table
           </div>
         )
     }}
-    size='large'
     style={TableStyle}
+    scroll={{y: 500, x: "max-content"}}
   />;
 
 export default DataTable;

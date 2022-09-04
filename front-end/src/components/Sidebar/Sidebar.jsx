@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from "react-router-dom";
 import './Sidebar.css';
 import Logo from "../../assets/5fm.png";
 
@@ -20,22 +21,23 @@ const Sidebar = () => {
       <div className='Menu'>
         {SidebarData.map((item, index) => {
           return(
-            <div className={selected===index?"MenuItem Active":"MenuItem"}
-            key={index}
-            onClick={()=>setSelected(index)}
+            <Link to={`/${item.path}`}
+              className={selected===index?"MenuItem Active":"MenuItem"}
+              key={index}
+              onClick={()=>setSelected(index)}
             >
               <item.icon/>
               <span>
                 {item.heading}
               </span>
-            </div>
+            </Link>
           )
         })}
       </div>
 
       {/* info */}
       <div className='Info'>
-        {InfoData.map((item, index) => {
+        {InfoData.map((item) => {
           return(
             <div className='InfoItem'>
               <item.icon/>

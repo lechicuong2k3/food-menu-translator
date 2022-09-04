@@ -4,11 +4,20 @@ import './Header.css';
 import { BsFillBellFill, BsFillCaretDownFill } from "react-icons/bs";
 import avt from "../../assets/avt.png"
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className='Header'>
       {/* section */}
-      <h2>Explore Restaurant</h2>
+      {/* {props.sectionData.map((item) => {
+        if (item.key===props.section) {
+          return (
+            <h2>{item.heading}</h2>
+          )
+        }
+        return <h2>Unexpected Error</h2>
+      })} */}
+
+      <h2>Restaurant</h2>
 
       {/* notification */}
       <BsFillBellFill size={20}/>

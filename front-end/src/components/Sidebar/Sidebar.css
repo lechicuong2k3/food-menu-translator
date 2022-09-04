@@ -6,7 +6,6 @@
   position: relative;
   /* padding-top: 0.3rem; */
   transition: all 300ms ease;
-  font-family: 'Kumbh Sans';
   font-weight: 500;
 }
 
@@ -31,6 +30,7 @@
 }
 
 .MenuItem {
+  color: black;
   display: flex;
   align-items: center;
   gap: 1rem;
