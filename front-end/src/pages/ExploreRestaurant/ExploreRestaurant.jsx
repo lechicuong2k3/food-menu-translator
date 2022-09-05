@@ -11,7 +11,7 @@ const ExploreRestaurant = (props) => {
     <div className='AppGlass'>
       <Sidebar heading={"Explore Restaurant"}/>
       <Header heading={"Explore Restaurant"}/>
-      <Main restaurantData={props.data}/>
+      <Main restaurantData={props.data} changeData={(e)=>props.changeData(e)}/>
       <Footer/>
     </div>
   )

@@ -21,3 +21,12 @@
   grid-template-columns: 1rem 5rem;
   align-items: center;
 }
+
+.button {
+  background-color: transparent;
+  border-width: 0ch;
+}
+
+.button:hover{
+  cursor: pointer;
+}

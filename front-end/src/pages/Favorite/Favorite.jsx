@@ -14,7 +14,7 @@ const Favorite = (props) => {
     <div className='AppGlass'>
       <Sidebar heading={"Your Favorite"}/>
       <Header heading={"Your Favorite"}/>
-      <Main restaurantData={favoriteData}/>
+      <Main restaurantData={favoriteData} changeData={(e)=>props.changeData(e)}/>
       <Footer/>
     </div>
   )
